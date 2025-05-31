@@ -1,6 +1,6 @@
 pipeline {
     agent any
-}
+
 
 tools{
     nodejs "NodeJS"
@@ -28,4 +28,6 @@ stages{
             sh 'docker run -d -p 3000:3000 learning-jenkins'
         }
 }
+}
+
 }
